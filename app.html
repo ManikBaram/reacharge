@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Indian Bank – Mobile Recharge</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Header -->
+  <div class="header">
+    <span class="back">←</span>
+    <span class="bank-name">INDIAN BANK</span>
+  </div>
+
+  <!-- Account Card -->
+  <div class="account-card">
+    <p>Savings Account</p>
+    <h3>XXXX XXXX 2451</h3>
+    <h2>₹ 12,850.00</h2>
+    <span>Available Balance</span>
+  </div>
+
+  <!-- Recharge Section -->
+  <div class="card">
+    <h4>Mobile Recharge</h4>
+
+    <label>Mobile Number</label>
+    <input type="text" id="mobile" placeholder="Enter mobile number">
+
+    <label>Recharge Plan</label>
+    <select id="plan">
+      <option value="">Select Plan</option>
+      <option value="199">₹199 – 1.5GB/day</option>
+      <option value="299">₹299 – 2GB/day</option>
+      <option value="499">₹499 – 3GB/day</option>
+    </select>
+
+    <button onclick="generateOTP()">Generate OTP</button>
+
+    <!-- OTP -->
+    <div id="otpSection" class="hidden">
+      <label>Enter OTP</label>
+      <input type="text" id="otpInput" placeholder="6-digit OTP">
+      <button class="secondary" onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+    <!-- Pay -->
+    <div id="paymentSection" class="hidden">
+      <button class="pay" onclick="pay()">Pay Securely</button>
+    </div>
+
+    <p id="message"></p>
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

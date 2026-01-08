@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #e9edf3;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 390px;
+  min-height: 100vh;
+  background: #e9edf3;
+}
+
+/* Header */
+.header {
+  background: #0b3c6d;
+  color: #fff;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+.back {
+  font-size: 18px;
+}
+
+.bank-name {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Account Card */
+.account-card {
+  background: linear-gradient(135deg, #0b3c6d, #1e5aa8);
+  color: #fff;
+  margin: 16px;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.account-card p {
+  margin: 0;
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+.account-card h3 {
+  margin: 6px 0;
+  font-weight: normal;
+}
+
+.account-card h2 {
+  margin: 10px 0 4px;
+}
+
+.account-card span {
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  margin: 16px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+.card h4 {
+  margin-bottom: 15px;
+  color: #0b3c6d;
+}
+
+label {
+  font-size: 13px;
+  color: #444;
+}
+
+input, select {
+  width: 100%;
+  padding: 12px;
+  margin: 6px 0 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #0b3c6d;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #6b7280;
+}
+
+button.pay {
+  background: #198754;
+}
+
+button:hover {
+  opacity: 0.95;
+}
+
+.hidden {
+  display: none;
+}
+
+#message {
+  margin-top: 12px;
+  text-align: center;
+  font-size: 14px;
+  color: #0b3c6d;
+}
